@@ -6,7 +6,7 @@ function parse_git_branch() {
 	if [ ! "${branch}" == "" ]
 	then
 		status=`parse_git_dirty`
-		echo -e "${branch}${fg_lred}${status}"
+		echo -e "${branch}${fg_lred}${status} "
 	else
 		echo ""
 	fi
